@@ -1,0 +1,158 @@
+/* 2/14/2019 */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	margin: 50px 0px;
+	background: #CAECFF;
+}
+.container{
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1140px;
+}
+/* image name*/
+.x{
+	width: 380px;
+	border: 1px solid white;
+}
+.image-wrap{
+	background-color: #65B7F3;
+	padding: 40px;
+	border-radius: 5px;
+	width: 460px;
+	margin: auto;
+}
+.center{
+	text-align: center;
+}
+
+/*
+header h1{
+	color: red;
+	font-size: 30px;
+	letter-spacing: 15px;
+	line-height: 60px;
+	
+	animation-name: moveInLeft;
+	animation-duration: 3s;
+	
+}header h1 span{
+	font-size: 40px;
+	display: block;
+}
+*/
+
+
+/* carlington */
+img{
+	max-width: 100%;
+}
+
+.image-wra {
+    float: left;
+    padding: 15px;
+    margin: 0;
+    background: #65B7F3;
+    width: 38%;
+}
+.content {
+		background-color: #fff;
+    float: left;
+    text-align: center;
+    padding: 50px 22px;
+    height: 418px;
+    position: relative;
+    width: 50%;
+    backface-visibility: hidden;
+
+}
+
+.content h1 {
+    margin: 0 0 30px;
+    color: #326FC0;
+}
+
+.content h2 {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    width: 80%;
+    padding: 20px;
+		font-size: 30px;
+		letter-spacing: 5px;
+	
+		animation: color 3s infinite;
+}
+.content p{
+	animation: moveInRight 3s ease-in;
+}
+.t {
+	display: none;
+}
+
+@media(max-width: 767px){
+	.image-wra {
+    float: none;
+    width: 100%;
+	}
+	.content {
+    float: none;
+    width: 100%;
+	}
+	.t {
+    text-align: center;
+    margin: 0 0 20px;
+    display: inherit;
+    animation: color 3s infinite;
+		text-transform: uppercase;
+		padding: 20px;
+		margin-bottom: 0;
+	}
+	.b{
+		display: none;
+	}
+}
+
+@keyframes color {
+  from {color: #326FC0;background: #fff;}
+  to {color: #65B7F3;}
+ 
+}
+
+@keyframes moveInLeft{
+	0% {
+		opacity: 0;
+		transform: translateX(-120px):
+	}
+	80%{
+		
+		transform: translateX(5px):
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight{
+	0% {
+		opacity: 0;
+		transform: translateX(100px):
+	}
+	80%{
+		
+		transform: translateX(-10px):
+	}
+	100%{
+		opacity: 1;
+		transform: translate(0);
+	}
+}
